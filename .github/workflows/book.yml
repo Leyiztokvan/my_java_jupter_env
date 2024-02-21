@@ -1,12 +1,16 @@
 # deploy your software/project with Github actions
 name: deploy-book
 
-# O. I commented this out, because for now I want to push changes manually
-# #only run this when the main branch changes
-# on: 
-#   push: 
-#     branches:
-#     - main 
+# O. I wanted to comment this out, because for now I want to push changes manually
+# but there was an error on GitHub Actions, so I had to leave it 
+  # Error: .github#L1
+  # No event triggers defined in `on`
+
+# only run this when the main branch changes
+on: 
+  push: 
+    branches:
+    - main 
 
 
 #Sets permissions of the GITHUB-TOKEN to allow deployment to Pages

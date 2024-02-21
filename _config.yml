@@ -1,0 +1,5 @@
+title: "Java with Jupyter demo"
+# O. I add this after seeing the Jupyter Book Community page
+author: Leyiztokvan
+execute: 
+  execute_notebooks: "off"

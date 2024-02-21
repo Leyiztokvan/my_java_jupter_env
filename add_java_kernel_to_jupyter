@@ -1,0 +1,19 @@
+ # install a package "IJava" for java support in juypterlab, found idea/package on stackoverflow: https://stackoverflow.com/questions/33972860/java-kernel-for-jupyter#:~:text=IJava%2C%20a%20Jupyter%20kernel%20for%20executing%20Java%20code. 
+ # IJava github source: https://github.com/SpencerPark/IJava?tab=readme-ov-file#install-from-source:~:text=Install%20pre%2Dbuilt%20binary  
+ #Install pre-built binary
+    # Download the release from the releases tab
+    # source: https://github.com/SpencerPark/IJava/releases 
+    # Note: if you have an old installation or a debug one from running gradlew installKernel it is suggested that it is first removed via jupyter kernelspec remove java.
+    # A prepackaged distribution will be in an artifact named ijava-$version.zip.
+    # Unzip it into a temporary location. It should have at least the install.py and java folder extracted in there.
+    # Run the installer with the same python command used to install jupyter. 
+    # The installer is a python script and has the same options as jupyter kernelspec install but additionally supports configuring some of the kernel properties mentioned further below in the README.
+    
+    # cd into dir where the zip is in 
+    /home/linux/Downloads/Data Science Lab (DSL) - Winter Trainings 2024/Tools for Python development/O_my_project/my_java_jupter_env/IJava/ijava-1.3.0
+    
+   # common install command is, this install the java kernel for jupyter
+    python3 install.py --sys-prefix
+
+   # Check that it installed with jupyter kernelspec list which should contain java.
+   # jupyter kernelspec list

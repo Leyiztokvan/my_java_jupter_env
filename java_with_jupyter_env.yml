@@ -1,0 +1,19 @@
+# env name
+name: java_with_jupter_env
+
+# channels
+channels:
+  - conda-forge
+
+# packages/dependencies
+dependencies:
+  # java version
+  - openjdk=17.0.9
+  - jupyterlab
+ 
+  # SQLite database
+  - sqlite
+  # JDBC driver 
+  
+
+# optionally pip packages
